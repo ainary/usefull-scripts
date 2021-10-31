@@ -1,0 +1,14 @@
+version: "2.4"
+
+services:
+  service1:
+    build: ./service1
+    command: gunicorn -w 8 -b :80 app:app
+    volumes:
+      - ./service1:/app
+    pids_limit: 100
+    cpu_percent: 50
+    mem_limit: 512M
+    restart: always 
+    ports:
+      - "80:80"
