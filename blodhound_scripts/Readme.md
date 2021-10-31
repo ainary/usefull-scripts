@@ -8,5 +8,7 @@ parse_users.py is a small script for parsing json file and output its content to
 3. Execute script as follow:
 
 `python3 parse_users.py`
+
 If necessary, redirect output to the file:
+
 `python3 parse_users.py > output.txt`
